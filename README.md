@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Next.js & NextUI Template
 
 This is a template for creating applications using Next.js 14 (pages directory) and NextUI (v2).
@@ -51,3 +52,6 @@ After modifying the `.npmrc` file, you need to run `pnpm install` again to ensur
 ## License
 
 Licensed under the [MIT license](https://github.com/nextui-org/next-pages-template/blob/main/LICENSE).
+=======
+# fedus-ley-page
+>>>>>>> e18c1251dba1a46238bc13c772830b6dca8f5fad
