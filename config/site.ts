@@ -4,10 +4,10 @@ export const siteConfig = {
 	name: "Fedus Ley",
 	description: "Creamos soluciones legales usando inteligencia artificial.",
 	navItems: [
-		// {
-		// 	label: "Home",
-		// 	href: "/",
-		// },
+		{
+			label: "Inicio",
+			href: "#home",
+		},
 		{
 			label: "Acerca de",
 			href: "#aboutme",

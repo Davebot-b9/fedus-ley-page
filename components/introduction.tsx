@@ -2,12 +2,12 @@ import { Link } from "@nextui-org/link";
 import { button as buttonStyles } from "@nextui-org/theme";
 import { siteConfig } from "@/config/site";
 import { title, subtitle } from "@/components/primitives";
-import Image from "next/image";
 
+import Image from "next/image";
 const Introduction = () =>{
     return(
-        <section className="flex flex-col items-center gap-4 mb-24 p-8 md:py-10">
-				<div className="inline-block max-w-lg text-center justify-center">
+        <section className="flex flex-col items-center gap-4 mb-24 p-8 md:py-10" id="home">
+				<div className="inline-block max-w-lg text-center justify-cente">
 					<h1 className={title({color: "green" })}>Fedus |&nbsp;</h1>
 					<h1 className={title({color: "blue" })}>Ley&nbsp;</h1>
 					<br />
@@ -21,8 +21,8 @@ const Introduction = () =>{
 
 				<div className="flex gap-3">
 					<Link
-						isExternal
-						href={siteConfig.links.docs}
+					isExternal
+						href= "#contact"
 						className={buttonStyles({
 							color: "primary",
 							radius: "full",
@@ -33,13 +33,14 @@ const Introduction = () =>{
 					</Link>
 					<Link
 						isExternal
+						isDisabled
 						className={buttonStyles({ variant: "bordered", radius: "full", color: "success" })}
 						href={siteConfig.links.github}
 					>
 						WhatsApp
 					</Link>
 				</div>
-				<Image src="/fed-int.png" alt="Logo Fedus" width={380} height={380} className="mx-auto rounded-full"/>
+				<Image src="/assets/fed-int.png" alt="Logo Fedus" width={380} height={380} className="mx-auto rounded-full pt-4"/>
 			</section>
     );
 }

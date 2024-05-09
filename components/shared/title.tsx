@@ -8,8 +8,8 @@ const Title = (props:TitleProps) => {
 
     return(
         <div className=" flex flex-col items-center">
-            <h3 className="text-gray-600 text-2xl">{title}</h3>
-            <h2 className="text-3xl">{subtitle}</h2>
+            <h3 className="text-gray-200 text-2xl">{title}</h3>
+            <h2 className="text-3xl text-blue-500">{subtitle}</h2>
         </div>
     );
 }

@@ -1,4 +1,4 @@
-import { BellPlus, BookText, Briefcase, Brush, Code2, CodeSquare, Home, Inbox, Mail, PanelsTopLeft, Phone, UserRound, UsersRound, Wrench } from "lucide-react";
+import { BellPlus, Brush, FacebookIcon, Inbox, PanelsTopLeft, Phone } from "lucide-react";
 
 export const dataAboutme = [
     {
@@ -91,14 +91,55 @@ export const dataUs = [
     {
         id: 1,
         name: "Misión",
-        icon: <Briefcase />,
-        description: "description...",
+        lineHead: "agregar description...",
+        descriptionHead: "description...",
+        descriptionComplete: "la descripcion completa...",
+        lineFooter: "Fedus | Ley",
+        descriptionFooter: "Todos tenemos derechos",
+        background: "/assets/image-1.jpg",
+        logo: "/assets/fed-log.png",
     },
     {
         id: 2,
         name: "Visión",
-        icon: <UsersRound />,
-        description: "description...",
+        lineHead: "Escribe aquí...",
+        descriptionHead: "description...",
+        descriptionComplete: "la descripcion completa...",
+        lineFooter: "Fedus | Ley",
+        descriptionFooter: "Todos tenemos derechos",
+        background: "/assets/image-3.jpg",
+        logo: "/assets/fed-log.png",
+    },
+];
+
+export const testimonialsData = [
+    {
+        id: 0,
+        name: "Juan Palomo",
+        testimonial:
+            "Escribir testimonio del cliente...",
+        image: "fed-log.png",
+    },
+    {
+        id: 1,
+        name: "Juan Palomo",
+        testimonial:
+            "Escribir testimonio del cliente...",
+        image: "fed-log.png",
+    },
+    {
+        id: 2,
+        name: "Juan Palomo",
+        testimonial:
+            "Escribir testimonio del cliente...",
+        image: "fed-log.png",
+    },
+    {
+        id: 3,
+        name: "Juan Palomo",
+        testimonial:
+            "Escribir testimonio del cliente...",
+        image: "fed-log.png",
     },
 ];
 
@@ -112,10 +153,10 @@ export const dataContact = [
     },
     {
         id: 2,
-        title: "Github",
-        subtitle: "github.com/ratasi",
+        title: "Facebook",
+        subtitle: "FedusLeyofficial",
         link: "github.com/ratasi",
-        icon: <Code2 />,
+        icon: <FacebookIcon />,
     },
     {
         id: 3,
