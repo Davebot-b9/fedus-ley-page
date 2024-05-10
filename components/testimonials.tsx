@@ -5,7 +5,7 @@ import { TestimonialSlider } from "./shared/testimonial-slider";
 
 const Testimonials = () => {
     return (
-        <div className='h-screen'>
+        <div className='h-screen' id='testimonials'>
             <div className="flex flex-col justify-center min-h-screen">
                 <motion.h1
                     variants={fadeIn('up', 0.5)}

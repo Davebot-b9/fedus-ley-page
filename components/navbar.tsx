@@ -10,6 +10,7 @@ import {
 	NavbarBrand,
 	NavbarItem,
 	NavbarMenuItem,
+	Image,
 } from "@nextui-org/react";
 
 import { link as linkStyles } from "@nextui-org/theme";
@@ -27,6 +28,7 @@ import {
 } from "@/components/icons";
 
 import { Logo } from "@/components/icons";
+import { itemsNavbar } from "@/data";
 
 export const Navbar = () => {
 	const searchInput = (
@@ -51,11 +53,15 @@ export const Navbar = () => {
 	);
 
 	return (
-		<NextUINavbar isBordered isBlurred={false} maxWidth="xl" position="sticky">
+		<NextUINavbar isBordered isBlurred={false} maxWidth="xl" position="sticky" className="fixed">
 			<NavbarContent className="basis-1/5 sm:basis-full" justify="start">
 				<NavbarBrand className="gap-3 max-w-fit">
 					<NextLink className="flex justify-start items-center gap-1" href="/">
-						<Logo />
+					<Image
+                                    alt="FedusLey app icon"
+                                    className="rounded-full w-16 bg-black"
+                                    src="/assets/fed-log.png"
+                                />
 						<p className="font-bold text-inherit text-2xl">Fedus | Ley</p>
 					</NextLink>
 				</NavbarBrand>
@@ -101,23 +107,41 @@ export const Navbar = () => {
 					<Link isExternal href={siteConfig.links.discord}>
 						<DiscordIcon className="text-default-500" />
 					</Link> */}
-					<ThemeSwitch />
+					{/* <ThemeSwitch /> */}
 				</NavbarItem>
 				{/* <NavbarItem className="hidden lg:flex">{searchInput}</NavbarItem> */}
 			</NavbarContent>
 
 			<NavbarContent className="sm:hidden basis-1 pl-4" justify="end">
-				<ThemeSwitch />
-				{/* <NavbarMenuToggle /> */}
+				{/* <ThemeSwitch /> */}
+				<NavbarMenuToggle />
 			</NavbarContent>
-			{/* Navbar menu */}
+			<NavbarMenu>
+				<div>
+					{itemsNavbar.map((item, index) => (
+						<NavbarMenuItem key={item.id}>
+							<Link
+							color={
+								index === 2
+									? "primary"
+									: index === siteConfig.navMenuItems.length - 1
+										? "danger"
+										: "foreground"
+							}
+							href={item.link}
+							size="lg"
+							>{item.title}</Link>
+						</NavbarMenuItem>
+					))}
+				</div>
+			</NavbarMenu>
 		</NextUINavbar>
-	);
+	)
 };
 
 
-{/* <NavbarMenu> */}
-{/* {searchInput} */}
+{/* <NavbarMenu> */ }
+{/* {searchInput} */ }
 {/* <div className="mx-4 mt-2 flex flex-col gap-2">
 	{siteConfig.navMenuItems.map((item, index) => (
 		<NavbarMenuItem key={`${item}-${index}`}>

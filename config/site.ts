@@ -1,8 +1,9 @@
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-	name: "Fedus Ley",
+	name: "Fedus | Ley",
 	description: "Creamos soluciones legales usando inteligencia artificial.",
+	img: "/assets/favicon.ico",
 	navItems: [
 		{
 			label: "Inicio",

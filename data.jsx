@@ -1,4 +1,37 @@
-import { BellPlus, Brush, FacebookIcon, Inbox, PanelsTopLeft, Phone } from "lucide-react";
+import { BellPlus, Brush, FacebookIcon, Inbox, PanelsTopLeft, Phone, Home, UserRound, BookText, Music, Mail } from "lucide-react";
+
+export const itemsNavbar = [
+    {
+        id: 1,
+        title: "Inicio",
+        icon: <Home size={20} />,
+        link: "#",
+    },
+    {
+        id: 2,
+        title: "Acerca de",
+        icon: <UserRound size={20} />,
+        link: "#aboutme",
+    },
+    {
+        id: 3,
+        title: "Servicios",
+        icon: <BookText size={20} />,
+        link: "#services",
+    },
+    {
+        id: 4,
+        title: "Testimonios",
+        icon: <Music size={20} />,
+        link: "#portfolio",
+    },
+    {
+        id: 5,
+        title: "Contact",
+        icon: <Mail size={20} />,
+        link: "#contact",
+    },
+];
 
 export const dataAboutme = [
     {
@@ -96,7 +129,7 @@ export const dataUs = [
         descriptionComplete: "la descripcion completa...",
         lineFooter: "Fedus | Ley",
         descriptionFooter: "Todos tenemos derechos",
-        background: "/assets/image-1.jpg",
+        background: "/assets/image-4.jpg",
         logo: "/assets/fed-log.png",
     },
     {
@@ -104,11 +137,55 @@ export const dataUs = [
         name: "Visión",
         lineHead: "Escribe aquí...",
         descriptionHead: "description...",
-        descriptionComplete: "la descripcion completa...",
         lineFooter: "Fedus | Ley",
         descriptionFooter: "Todos tenemos derechos",
-        background: "/assets/image-3.jpg",
+        background: "/assets/image-4.jpg",
         logo: "/assets/fed-log.png",
+    },
+];
+
+// export const dataContentUs = [
+//     {
+//         idC: 1,
+//         titleContent: "Misión",
+//         descriptionComplete: "la descripcion completa...",
+//     },
+//     {
+//         idC: 2,
+//         titleContent: "Vision",
+//     }
+// ];
+
+export const dataServices = [
+    {
+        id: 1,
+        title: "Servicio 1",
+        subtitle: "description...",
+        footerTitle: "description...",
+        footerSubtitle: "description...",
+        bg: "/assets/image-2.jpg",
+        alt: "description...",
+        content: "Magna exercitation reprehenderit magna aute tempor cupidatat consequat elit dolor adipisicing.Mollit dolor eiusmod sunt ex incididunt cillum quis. Velit duis sit officia eiusmod Lorem aliqua enim laboris do dolor eiusmod. Et mollit incididunt nisi consectetur esse laborum eiusmod pariatur proident Lorem eiusmod et.Culpa deserunt nostrud ad veniam.",
+    },
+    {
+        id: 2,
+        title: "Servicio 2",
+        subtitle: "description...",
+        footerTitle: "description...",
+        footerSubtitle: "description...",
+        bg: "/assets/image-4.jpg",
+        alt: "description...",
+        content: "Description",
+    },
+    {
+        id: 3,
+        title: "Servicio 3",
+        subtitle: "description...",
+        footerTitle: "description...",
+        footerSubtitle: "description...",
+        bg: "/assets/image-3.jpg",
+        alt: "description...",
+        content: "Magna exercitation reprehenderit magna aute tempor cupidatat consequat elit dolor adipisicing.Mollit dolor eiusmod sunt ex incididunt cillum quis. Velit duis sit officia eiusmod Lorem aliqua enim laboris do dolor eiusmod. Et mollit incididunt nisi consectetur esse laborum eiusmod pariatur proident Lorem eiusmod et.Culpa deserunt nostrud ad veniam.",
     },
 ];
 
@@ -162,7 +239,7 @@ export const dataContact = [
         id: 3,
         title: "Email",
         subtitle: "email@email.com",
-        link: "mailto:test@test.com",
+        link: "mailto:jose@fedus.com",
         icon: <Inbox />,
     },
 ];

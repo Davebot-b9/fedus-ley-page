@@ -11,6 +11,7 @@ export default function IndexPage() {
 	return (
 		<DefaultLayout>
 			<Introduction/>
+			<Divider orientation="horizontal"/>
 			<Aboutme/>
 			<Divider orientation="horizontal"/>
 			<Services/>
