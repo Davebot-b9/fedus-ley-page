@@ -1,4 +1,5 @@
 import { BellPlus, Brush, FacebookIcon, Inbox, PanelsTopLeft, Phone, Home, UserRound, BookText, Music, Mail } from "lucide-react";
+import { title } from "process";
 
 export const itemsNavbar = [
     {
@@ -238,8 +239,16 @@ export const dataContact = [
     {
         id: 3,
         title: "Email",
-        subtitle: "email@email.com",
-        link: "mailto:jose@fedus.com",
+        subtitle: "jose@fedusley.com",
+        link: "mailto:jose@fedusley.com",
         icon: <Inbox />,
     },
+];
+
+export const dataTerms = [
+    {
+        id: 1,
+        title: "Políticas de privacidad",
+        content: "",
+    }
 ];

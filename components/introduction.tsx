@@ -31,14 +31,14 @@ const Introduction = () =>{
 					>
 						Contáctanos
 					</Link>
-					<Link
+					{/* <Link
 						isExternal
 						isDisabled
 						className={buttonStyles({ variant: "bordered", radius: "full", color: "success" })}
 						href={siteConfig.links.github}
 					>
 						WhatsApp
-					</Link>
+					</Link> */}
 				</div>
 				<Image src="/assets/fed-int.png" alt="Logo Fedus" width={380} height={380} className="mx-auto rounded-full pt-4"/>
 			</section>
